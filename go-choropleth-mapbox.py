@@ -3,7 +3,7 @@ import plotly.graph_objs as go
 import numpy as np
 import json
 
-with open("china_province.geojson") as f:
+with open("china_province.geojson", encoding='utf8') as f:
     provinces_map = json.load(f)
 
 df = pd.read_csv('data.csv')
