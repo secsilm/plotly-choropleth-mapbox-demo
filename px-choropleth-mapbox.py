@@ -1,10 +1,9 @@
 import pandas as pd
-# import geopandas
 import plotly.express as px
 import numpy as np
 import json
 
-with open("china_province.geojson") as f:
+with open("china_province.geojson", encoding='utf8') as f:
     provinces_map = json.load(f)
 
 df = pd.read_csv('data.csv')
